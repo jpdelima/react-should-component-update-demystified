@@ -27,8 +27,8 @@ class Product  extends Component {
 }
 
 const ProductsList = (props) => {
-  const products = props.products.map((product, index) => {
-    return <Product key={index} product={product} onProductChanged={props.onProductChanged} />
+  const products = props.products.map((product) => {
+    return <Product key={product.id} product={product} onProductChanged={props.onProductChanged} />
   });
 
   return (
